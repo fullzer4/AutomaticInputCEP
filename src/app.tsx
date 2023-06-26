@@ -25,11 +25,16 @@ export function App() {
 
   return (
     <>
-      <input type="number" value={cep} onChange={(e:any) => setCep(e.target.value)}/>
-      <input type="number" value={address} onChange={(e:any) => setAddress(e.target.value)}/>
-      <input type="number" value={city} onChange={(e:any) => setCity(e.target.value)}/>
-      <input type="number" value={district} onChange={(e:any) => setDistrict(e.target.value)}/>
-      <input type="number" value={state} onChange={(e:any) => setState(e.target.value)}/>
+      <h1>Form</h1>
+      <div>
+        <input type="number" value={cep} onChange={(e:any) => setCep(e.target.value)}/>
+        <input type="text" value={address} onChange={(e:any) => setAddress(e.target.value)}/>
+      </div>
+      <div>
+        <input type="text" value={city} onChange={(e:any) => setCity(e.target.value)}/>
+        <input type="text" value={district} onChange={(e:any) => setDistrict(e.target.value)}/>
+        <input type="text" value={state} onChange={(e:any) => setState(e.target.value)}/>
+      </div>
     </>
   )
 }
